@@ -1,0 +1,32 @@
+/* *** Fonts *** */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* *** Variables *** */
+:root {
+    --poppins: 'poppins', sans-serif;
+    --theme-color: #3B1CFF;
+    --text-theme-color: #1C5BFF;
+    --secondary-theme-color: #D9D9D9;
+    --tertiary-theme-color: #ECECEC;
+}
+
+/* *** Utilities *** */
+.font-poppins {
+    font-family: var(--poppins);
+}
+
+.bg-theme-color {
+    background-color: var(--theme-color);
+}
+
+.text-theme-color {
+    color: var(--text-theme-color);
+}
+
+.bg-secondary-theme {
+    background-color: var(--secondary-theme-color);
+}
+
+.bg-tertiary-theme {
+    background-color: var(--tertiary-theme-color);
+}
