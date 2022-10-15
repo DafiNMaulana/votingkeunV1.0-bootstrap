@@ -27,6 +27,10 @@
     background-color: var(--secondary-theme-color);
 }
 
+.color-theme {
+    color: var(--theme-color);
+}
+
 .bg-tertiary-theme {
     background-color: var(--tertiary-theme-color);
 }
