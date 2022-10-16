@@ -20,132 +20,120 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="color-theme fw-semibold" style="font-size: 24px;">Pemilihan Kepala</h1>
-                <h1 class="color-theme fw-semibold" style="font-size: 24px;">Desa Wakanda</h1>
+                <h1 class="color-theme fw-semibold" style="font-size: 24px;">Pemilihan Ketua Osis </h1>
+                <h1 class="color-theme fw-semibold" style="font-size: 24px;">SMK Negeri 1 Padaherang</h1>
                 <p>Senin, 12/08/2022</p>
             </div>
         </div>
     </div><!-- header content END -->
 
-    <!-- main content -->
-    <div class="accordion accordion-flush" id="accordionVotingkeun">
-
-        <!-- card paslon 1 -->
-        <div class="accordion-item " style="border: 0 !important;">
-            <!-- main paslon -->
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-3 overflow-hidden border rounded " style="max-height: 110px; z-index: 2;">
-                        <!-- **wajib 472x650px(Resize -> crop)  ** -->
-                        <img src="asset/image/sasuke.jpg" 
-                        style="max-width: 100px; min-width: 70px;  margin-left: -20px;">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item" style="border:0 !important;">
+            
+            <!-- paslon card -->
+            <div class="accordion-header" id="panelsStayOpen-heading1">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-3 overflow-hidden border rounded " style="max-height: 110px; z-index: 2;">
+                            <!-- **wajib 472x650px(Resize -> crop)  ** -->
+                            <img src="asset/image/sasuke.jpg" 
+                            style="max-width: 100px; min-width: 70px;  margin-left: -20px;">
+                        </div>
+                        <div class="col-8 position-relative bg-secondary-theme rounded-end" style="margin-left: -5px; z-index: 1;">
+                            <h1 class="fw-bold pt-2">01</h1>
+                            <p class="fw-semibold" style="font-size: 14px;">Uchiha Sasuke</p>
+                            <p style="margin-top: -10px; font-size: 12px;">Partai Uchiha abadi</p>
+            
+                            <button class="btn btn-sm btn-outline-primary position-absolute"  
+                            onclick="btnVisiMisi()"
+                            id="btnVimPro"
+                            style="top: 35px; right: 20px;" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#panelsStayOpen-collapseOne" 
+                            aria-expanded="true" 
+                            aria-controls="panelsStayOpen-collapseOne">
+                                <i class="fas fa-plus" id="iconPlus"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-8 position-relative bg-secondary-theme rounded-end" style="margin-left: -5px; z-index: 1;">
-                        <h1 class="fw-bold pt-2">01</h1>
-                        <p class="fw-semibold" style="font-size: 14px;">Uchiha Sasuke</p>
-                        <p style="margin-top: -10px; font-size: 12px;">Partai Uchiha abadi</p>
-        
-                        <button class="btn btn-sm btn-outline-primary position-absolute"  
-                        style="top: 35px; right: 20px;" 
-                        onclick="btnVisiMisi()"
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#pasangan-calon-1" 
-                        aria-expanded="false" 
-                        aria-controls="pasangan-calon-1">
-                            <i class="fas fa-plus" id="iconPlus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div> <!-- main paslon -->
-          
-
-          <!-- Detail paslon -->
-          <div id="pasangan-calon-1" 
-          style="margin-top: -10px;"
-          class="accordion-collapse collapse row justify-content-center px-3" 
-          aria-labelledby="flush-heading1" 
-          data-bs-parent="#accordionVotingkeun">
-            <div style="margin-right: -3px;" class="col-11 rounded-3 bg-tertiary-theme">
-                <div class="col-11 d-flex flex-column mt-3">
-                    <p class="fw-semibold d-inline" style="font-size: 14px;">Visi :</p> 
-                    <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, cupiditate.</span> 
-                </div>
-
-                <div class="col-11 d-flex flex-column mt-3">
-                    <p class="fw-semibold d-inline" style="font-size: 14px;">Misi :</p> 
-                    <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto doloremque corrupti ipsa officia aliquam perferendis totam omnis corporis animi.</span> 
-                </div>
-
-                <div class="col-11 d-flex flex-column mt-3">
-                    <p class="fw-semibold d-inline" style="font-size: 14px;">Program :</p> 
-                    <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima laudantium doloribus error ullam quis.</span> 
-                </div>
+                </div> 
             </div>
-          </div> <!-- Detail paslon end -->
-          
-        </div> <!-- card paslon END -->
+            <!-- paslon card -->
 
-        <!-- card paslon 2 -->
-        <div class="accordion-item mt-3" style="border: 0 !important;">
-            <!-- main paslon -->
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-3 overflow-hidden border rounded " style="max-height: 110px; z-index: 2;">
-
-                        <!-- **wajib 472x650px(Resize dulu 472x650px -> lalu crop 472x650px)  ** -->
-                        <!-- bisa make situs iloveimg.com -->
-                        <img src="asset/image/sasuke.jpg" 
-                        style="max-width: 100px; min-width: 70px;  margin-left: -20px;">
+            <!-- paslon Detail -->
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse row justify-content-center mx-2" aria-labelledby="panelsStayOpen-heading1">
+                <div style="margin-right: 0px;" class="col-11 rounded-3 bg-tertiary-theme">
+                    <div class="col-11 d-flex flex-column mt-3">
+                        <p class="fw-semibold d-inline" style="font-size: 14px;">Visi :</p> 
+                        <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, cupiditate.</span> 
                     </div>
-                    <div class="col-8 position-relative bg-secondary-theme rounded-end" style="margin-left: -5px; z-index: 1;">
-                        <h1 class="fw-bold pt-2">01</h1>
-                        <p class="fw-semibold" style="font-size: 14px;">Uchiha Sasuke</p>
-                        <p style="margin-top: -10px; font-size: 12px;">Partai Uchiha abadi</p>
-                        
-                        <!-- **Nama ID tombol, aria-controls, & data-bs-target na detail paslon kudu sarua** -->
-                        <!-- **function btnVisiMisi bisa tambahan id DB misal btnVisiMisi(id)** -->
-                        <!-- **berlaku oge jeng data-bs-target angka na bisa di genti ku id DB** -->
-                        <button class="btn btn-sm btn-outline-primary position-absolute"  
-                        style="top: 35px; right: 20px;" 
-                        onclick="btnVisiMisi2()"
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#pasangan-calon-2" 
-                        aria-expanded="false" 
-                        aria-controls="pasangan-calon-2">
-                            <i class="fas fa-plus" id="iconPlus2"></i>
-                        </button>
+
+                    <div class="col-11 d-flex flex-column mt-3">
+                        <p class="fw-semibold d-inline" style="font-size: 14px;">Misi :</p> 
+                        <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto doloremque corrupti ipsa officia aliquam perferendis totam omnis corporis animi.</span> 
+                    </div>
+
+                    <div class="col-11 d-flex flex-column mt-3">
+                        <p class="fw-semibold d-inline" style="font-size: 14px;">Program :</p> 
+                        <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima laudantium doloribus error ullam quis.</span> 
                     </div>
                 </div>
-            </div> <!-- main paslon -->
-          
+            </div> 
+            <!-- paslon Detail end -->
 
-          <!-- Detail paslon -->
-          <div id="pasangan-calon-2" 
-          style="margin-top: -10px;"
-          class="accordion-collapse collapse row justify-content-center px-3" 
-          aria-labelledby="flush-heading1" 
-          data-bs-parent="#accordionVotingkeun">
-            <div style="margin-right: -3px;" class="col-11 rounded-3 bg-tertiary-theme">
-                <div class="col-11 d-flex flex-column mt-3">
-                    <p class="fw-semibold d-inline" style="font-size: 14px;">Visi :</p> 
-                    <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, cupiditate.</span> 
-                </div>
-
-                <div class="col-11 d-flex flex-column mt-3">
-                    <p class="fw-semibold d-inline" style="font-size: 14px;">Misi :</p> 
-                    <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto doloremque corrupti ipsa officia aliquam perferendis totam omnis corporis animi.</span> 
-                </div>
-
-                <div class="col-11 d-flex flex-column mt-3">
-                    <p class="fw-semibold d-inline" style="font-size: 14px;">Program :</p> 
-                    <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima laudantium doloribus error ullam quis.</span> 
-                </div>
+            <!-- paslon card 2 -->
+            <div class="accordion-header" id="panelsStayOpen-heading2">
+                <div class="container">
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-3 overflow-hidden border rounded " style="max-height: 110px; z-index: 2;">
+                            <!-- **wajib 472x650px(Resize -> crop)  ** -->
+                            <img src="asset/image/cha-hae-in.jpg" 
+                            style="max-width: 100px; min-width: 70px;  margin-left: -20px;">
+                        </div>
+                        <div class="col-8 position-relative bg-secondary-theme rounded-end" style="margin-left: -5px; z-index: 1;">
+                            <h1 class="fw-bold pt-2">02</h1>
+                            <p class="fw-semibold" style="font-size: 14px;">Cha Hae In</p>
+                            <p style="margin-top: -10px; font-size: 12px;">Partai Waifu wangi perjuangan</p>
+            
+                            <button class="btn btn-sm btn-outline-primary position-absolute"  
+                            onclick="btnVisiMisi2()"
+                            id="btnVimPro2"
+                            style="top: 35px; right: 20px;" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#panelsStayOpen-collapse2" 
+                            aria-expanded="true" 
+                            aria-controls="panelsStayOpen-collapse2">
+                                <i class="fas fa-plus" id="iconPlus2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div> 
             </div>
-          </div> <!-- Detail paslon end -->
-          
-        </div> <!-- card paslon END -->
+            <!-- paslon card 2 END -->
 
-    </div> <!-- Main content end -->
+            <!-- paslon Detail 2 -->
+            <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse row justify-content-center mx-2" aria-labelledby="panelsStayOpen-heading2">
+                <div style="margin-right: 0px;" class="col-11 rounded-3 bg-tertiary-theme">
+                    <div class="col-11 d-flex flex-column mt-3">
+                        <p class="fw-semibold d-inline" style="font-size: 14px;">Visi :</p> 
+                        <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, cupiditate.</span> 
+                    </div>
+
+                    <div class="col-11 d-flex flex-column mt-3">
+                        <p class="fw-semibold d-inline" style="font-size: 14px;">Misi :</p> 
+                        <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto doloremque corrupti ipsa officia aliquam perferendis totam omnis corporis animi.</span> 
+                    </div>
+
+                    <div class="col-11 d-flex flex-column mt-3">
+                        <p class="fw-semibold d-inline" style="font-size: 14px;">Program :</p> 
+                        <span class="d-inline" style="font-size: 14px; margin-top: -15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima laudantium doloribus error ullam quis.</span> 
+                    </div>
+                </div>
+            </div> 
+            <!-- paslon Detail 2 end  -->
+
+        </div>
+    </div>
     
     
     <script src="script/votingkeun.js"></script>
