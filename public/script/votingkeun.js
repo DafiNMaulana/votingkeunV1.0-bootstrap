@@ -41,3 +41,32 @@ function btnVisiMisi2() {
         btnVimPro2.classList.add('btn-outline-primary');
     };
 }
+
+// *** Bilik suara 2 tekan coblos dulu lalu masukan suara ***
+let coblos1 = document.getElementById('coblos1');
+let coblos2 = document.getElementById('coblos2');
+let btnMasukanSuara = document.getElementById('btnMasukanSuara');
+
+function coblosAct1() {
+    coblos1.classList.remove('bg-theme-color', 'btn-primary', 'px-3');
+    coblos1.classList.add('btn-outline-primary', 'btn-outline-theme', 'px-2')
+    coblos1.innerHTML  = 'Di Coblos <i class="fas fa-vote-yea"></i> </button>';
+
+    btnMasukanSuara.removeAttribute('disabled')
+
+    coblos2.classList.remove('btn-outline-primary', 'btn-outline-theme');
+    coblos2.classList.add('bg-theme-color', 'btn-primary')
+    coblos2.innerHTML  = 'Coblos <i class="fas fa-edit"></i> </button>';
+}
+
+function coblosAct2() {
+  coblos2.classList.remove('bg-theme-color', 'btn-primary', 'px-3');
+  coblos2.classList.add('btn-outline-primary', 'btn-outline-theme', 'px-2')
+  coblos2.innerHTML  = 'Di Coblos <i class="fas fa-vote-yea"></i> </button>';
+
+  btnMasukanSuara.removeAttribute('disabled')
+
+  coblos1.classList.remove('btn-outline-primary', 'btn-outline-theme');
+  coblos1.classList.add('bg-theme-color', 'btn-primary')
+  coblos1.innerHTML  = 'Coblos <i class="fas fa-edit"></i> </button>';
+}

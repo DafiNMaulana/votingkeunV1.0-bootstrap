@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilik Suara | Votingkeun</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../src/bootstrap/dist/css/bootstrap.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="style/votingkeun.css" />
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../src/fontawesome/css/all.css">
+</head>
+<body>
+
+  <!-- header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-4" style="line-height: 3px;">
+        <p>Sisa durasi kamu di bilik suara</p>
+        <p class="fw-bold">01:30 Seconds</p>
+      </div>
+
+      <div class="col-12 text-center my-5">
+        <h2 class="color-theme fw-bold">Selamat memilih</h2>
+      </div>
+    </div>
+  </div> <!-- header end -->
+
+  <!-- main content -->
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12">
+        <div class="card bg-secondary-theme border-0 overflow-hidden">
+          <div class="col overflow-hidden rounded-4 mx-5 mt-4" style="max-height: 258px;">
+            <img src="asset/image/sasuke.jpg" class="card-img-top" alt="asset/image/sasuke.jpg">
+          </div>
+          <div class="card-body text-center">
+            <p class="card-title fw-bold text-dark" 
+            style="font-size: 30px; margin-top: -10px;">01</p>
+          </div>
+          <div class="ket-paslon d-flex mx-3 justify-content-between">
+            <div class="nama d-block ms-3 mb-3" style="line-height: 15px;">
+              <p class="card-text fw-bold">Sasuke Uchiha</p>
+              <p class="card-text" style="margin-top: -7px; font-size: 12px;">Partai Uchiha abadi</p>
+            </div>
+            <div class="coblos d-flex mb-3">
+                <button type="button" value="1" id="coblos1" onclick="coblosAct1()"
+                class="btn btn-primary bg-theme-color py-2 px-3 rounded-3">
+                Coblos <i class="fas fa-edit"></i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="card bg-secondary-theme border-0 overflow-hidden">
+          <div class="col overflow-hidden rounded-4 mx-5 mt-4" style="max-height: 258px;">
+            <img src="asset/image/cha-hae-in.jpg" class="card-img-top" alt="asset/image/sasuke.jpg">
+          </div>
+          <div class="card-body text-center">
+            <p class="card-title fw-bold text-dark" 
+            style="font-size: 30px; margin-top: -10px;">02</p>
+          </div>
+          <div class="ket-paslon d-flex mx-3 justify-content-between">
+            <div class="nama d-block ms-3 mb-3" style="line-height: 15px;">
+              <p class="card-text fw-bold">Cha Hae In</p>
+              <p class="card-text" style="margin-top: -7px; font-size: 12px;">Partai Waifu wangi perjuangan</p>
+            </div>
+            <div class="coblos d-flex mb-3">
+                <button type="button" value="1" id="coblos2" onclick="coblosAct2()"
+                class="btn btn-primary bg-theme-color py-2 px-3 rounded-3">
+                Coblos <i class="fas fa-edit"></i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- main content END -->
+
+  <!-- submit btn -->
+  <div class="container">
+    <div class="row justify-content-center mt-4" style="margin-bottom: 7rem;">
+        <div class="col-12 text-center">
+            <button type="submit" id="btnMasukanSuara" disabled
+            class="btn btn-pritheme btn-primary rounded-4 fw-semibold text-center py-2 border-0" 
+            style="padding-right: 3rem; padding-left: 3rem; margin-top: 5rem;">Masukan suara <i class="fas fa-envelope-open-text fs-3"></i> </button>
+        </div>
+    </div>
+  </div>  <!-- submit btn -->
+
+  <!-- footer -->
+  <div class="container position-relative">
+    <div class="row position-absolute start-0 end-0 bottom-0">
+      <div class="col-12 d-flex justify-content-center">
+        <p class="fw-semibold" style="font-size: 12px;">Butuh bantuan?</p> 
+        <a href="" 
+        class="fw-semibold text-decoration-none color-theme" 
+        style="font-size: 12px;">Klik Disini</a>
+      </div>
+    </div>
+  </div> <!-- footer END -->
+  
+  
+  <script src="script/votingkeun.js"></script>
+</body>
+</html>

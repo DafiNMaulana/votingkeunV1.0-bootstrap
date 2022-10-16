@@ -40,6 +40,23 @@
     color: var(--text-theme-color);
 }
 
+.btn-pritheme {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+.btn-pritheme:hover {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+.btn-outline-theme:hover {
+    background: none !important;
+    color: var(--theme-color);
+}
+
+
+
 /* *** Do to all *** */
 * {
     font-family: var(--poppins);
@@ -47,6 +64,11 @@
 
 body::-webkit-scrollbar {
     display:none;
+}
+
+body {
+    max-width: 360px;
+    margin: auto;
 }
 
 /* *** Login Form *** */
