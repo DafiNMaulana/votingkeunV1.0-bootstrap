@@ -35,6 +35,11 @@
     background-color: var(--tertiary-theme-color);
 }
 
+.btn-sectheme:hover {
+    background-color: var(--secondary-theme-color) !important;
+    color: var(--text-theme-color);
+}
+
 /* *** Do to all *** */
 * {
     font-family: var(--poppins);
