@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- theme color mayan jeng penampilan na chrome mobile light mode -->
+    <meta name="theme-color" content="#3B1CFF" >
     <title>Login | Votingkeun</title>
 
     <!-- bootstrap -->
@@ -12,7 +14,7 @@
     <!-- style -->
     <link rel="stylesheet" href="style/votingkeun.css" />
   </head>
-  <body class="overflow-hidden">
+  <body>
 
     <!-- Title bar -->
     <div class="container-fluid">
@@ -35,31 +37,68 @@
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 2rem;">
             <div class="col-10">
-                <form action="home-1.html" class="text-center">
+                <form action="home-2.html" class="text-center needs-validation" novalidate>
                     <div class="mb-3 text-start">
                         <label for="username" class="form-label fw-semibold" style="font-size: 14px; margin-bottom: -10px">Username</label>
-                        <input type="text" placeholder="ajidsolehudin" name="username" class="form-control" id="username">
+                        <input required type="text" 
+                        placeholder="ajidsolehudin" 
+                        name="username" 
+                        class="form-control" 
+                        id="username">
+                        <div class="invalid-feedback">
+                          Tolong masukan username
+                        </div>
                     </div>
                     <div class="mb-3 text-start">
                       <label for="password" class="form-label fw-semibold" style="font-size: 14px; margin-bottom: -10px">Kata Sandi</label>
-                      <input type="password" placeholder="******" name="password" class="form-control" id="password">
+                      <input required type="password" 
+                      placeholder="******" 
+                      name="password" 
+                      class="form-control" 
+                      id="password">
+                      <div class="invalid-feedback">
+                        Tolong masukan password
+                      </div>
                     </div>
                     <button type="submit" class="btn btn-primary rounded-4 bg-theme-color fw-semibold text-center py-2" style="padding-right: 5rem; padding-left: 5rem; margin-top: 5rem;">Masuk</button>
-                  </form>
+                </form>
             </div>
         </div>
     </div> <!-- login form END -->
 
     <!-- footer -->
     <div class="container">
-      <div class="row position-absolute start-0 end-0 bottom-0">
+      <div class="row" style="margin-top: 10rem;">
         <div class="col-12 d-flex justify-content-center">
-          <p class="fw-semibold" style="font-size: 12px;">Butuh bantuan?</p> <a href="" class="fw-semibold text-decoration-none color-theme" style="font-size: 12px;">Klik Disini</a>
+          <p class="fw-semibold" style="font-size: 12px;">Butuh bantuan?</p> <a href="wa.me/+6281388274188" target="_blank" class="fw-semibold text-decoration-none color-theme" style="font-size: 12px;">Klik Disini</a>
         </div>
       </div>
     </div>
     <!-- footer END -->
    
+
+    <script src="../src/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
     
   </body>
 </html>
