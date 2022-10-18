@@ -70,3 +70,20 @@ function coblosAct2() {
   coblos1.classList.add('bg-theme-color', 'btn-primary')
   coblos1.innerHTML  = 'Coblos <i class="fas fa-edit"></i> </button>';
 }
+
+// *** kartu suara ***
+let selengkapnya1 = document.getElementById('selengkapnya1');
+let accordionBody = document.getElementById('accordionBody1');
+let arrowCircle = document.getElementById('arrowCircle');
+
+selengkapnya1.onclick = function() {
+  accordionBody.style.whiteSpace = 'wrap';
+
+  if(selengkapnya1.innerText === 'Selengkapnya') {
+    selengkapnya1.innerText = 'Tutup';
+    arrowCircle.classList.add('rotate-up');
+  } else {
+    selengkapnya1.innerText = 'Selengkapnya';
+    arrowCircle.classList.remove('rotate-up');
+  }
+}
