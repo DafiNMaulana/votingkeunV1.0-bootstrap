@@ -73,8 +73,10 @@ function coblosAct2() {
 
 // *** kartu suara ***
 let selengkapnya1 = document.getElementById('selengkapnya1');
+let selengkapnya2 = document.getElementById('selengkapnya2');
 let accordionBody = document.getElementById('accordionBody1');
 let arrowCircle = document.getElementById('arrowCircle');
+let arrowCircle2 = document.getElementById('arrowCircle2');
 
 selengkapnya1.onclick = function() {
   accordionBody.style.whiteSpace = 'wrap';
@@ -85,5 +87,17 @@ selengkapnya1.onclick = function() {
   } else {
     selengkapnya1.innerText = 'Selengkapnya';
     arrowCircle.classList.remove('rotate-up');
+  }
+}
+
+selengkapnya2.onclick = function() {
+  accordionBody.style.whiteSpace = 'wrap';
+
+  if(selengkapnya2.innerText === 'Selengkapnya') {
+    selengkapnya2.innerText = 'Tutup';
+    arrowCircle2.classList.add('rotate-up');
+  } else {
+    selengkapnya2.innerText = 'Selengkapnya';
+    arrowCircle2.classList.remove('rotate-up');
   }
 }

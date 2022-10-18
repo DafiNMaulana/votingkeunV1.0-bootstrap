@@ -36,7 +36,9 @@
   <!-- main content -->
   <div class="container">
     <div class="row justify-content-center mb-4">
-      <div class="col-12 col-lg-4">
+
+      <!-- kartu suara 1 -->
+      <div class="col-12 col-lg-4 mb-lg-0 mb-4">
         <div class="card bg-secondary-theme border-0 overflow-hidden">
           <div class="col overflow-hidden rounded-4 mx-5 mt-4" style="max-height: 258px;">
             <img src="asset/image/sasuke.jpg" class="card-img-top" alt="asset/image/sasuke.jpg">
@@ -48,12 +50,12 @@
             style="font-size: 30px; margin-top: -15px;">Sasuke Uchiha</h4>
             <p class="card-text" style="margin-top: -3px; font-size: 15px;">Partai Uchiha abadi</p>
           </div>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion accordion-flush" id="kartuSuara">
             <div class="accordion-item bg-transparent text-center">
-              <h5 class="accordion-header" id="flush-headingOne" style="margin-bottom: -10px">
+              <h5 class="accordion-header" id="kartu-suara-1" style="margin-bottom: -10px">
                 Visi :
               </h5>
-              <div id="kartuSuara1" class="accordion-collapse bilik-2 collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="kartuSuara1" class="accordion-collapse bilik-2 collapse" aria-labelledby="kartu-suara-1" data-bs-parent="#kartuSuara">
                 <div class="accordion-body" id="accordionBody1" style="text-align: justify;">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt inventore ea quia eius!
                   <h5 class="mt-3 text-center">Misi :</h5>
@@ -84,7 +86,58 @@
           </div>
           </div>
         </div>
-      </div>
+      </div> <!-- kartu suara 1 end -->
+
+      <!-- kartu suara 2 -->
+      <div class="col-12 col-lg-4 mb-lg-0 mb-4">
+        <div class="card bg-secondary-theme border-0 overflow-hidden">
+          <div class="col overflow-hidden rounded-4 mx-5 mt-4" style="max-height: 258px;">
+            <img src="asset/image/cha-hae-in.jpg" class="card-img-top" alt="asset/image/sasuke.jpg">
+          </div>
+          <div class="card-body text-center">
+            <p class="card-title fw-bold text-dark" 
+            style="font-size: 30px; margin-top: -10px;">02</p>
+            <h4 class="card-text fw-bold"
+            style="font-size: 30px; margin-top: -15px;">Cha Hae In</h4>
+            <p class="card-text" style="margin-top: -3px; font-size: 15px;">Partai Waifu wangi wangi</p>
+          </div>
+          <div class="accordion accordion-flush" id="kartuSuara">
+            <div class="accordion-item bg-transparent text-center">
+              <h5 class="accordion-header" id="kartu-suara-2" style="margin-bottom: -10px">
+                Visi :
+              </h5>
+              <div id="kartuSuara2" class="accordion-collapse bilik-2 collapse" aria-labelledby="kartu-suara-2" data-bs-parent="#kartuSuara">
+                <div class="accordion-body" id="accordionBody1" style="text-align: justify;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit non sunt inventore ea quia eius!
+                  <h5 class="mt-3 text-center">Misi :</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ipsum. Assumenda error labore ullam repellendus veniam possimus beatae voluptatibus aspernatur earum, itaque, vitae iusto cum autem voluptas debitis consequuntur placeat.
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="btn col-form-label-sm bg-transparent border-0 mb-2 color-theme" 
+                style="margin-top: -10px; margin-left: -10px;"
+                type="button" 
+                id="selengkapnya2"
+                data-bs-toggle="collapse" 
+                data-bs-target="#kartuSuara2" 
+                aria-expanded="true" 
+                aria-controls="kartuSuara2">
+                  Selengkapnya
+                <p> <i class="fas fa-arrow-circle-down color-theme" style="margin-left: -6px !important" id="arrowCircle2"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ket-paslon d-flex mx-3 justify-content-center">
+            <div class="nama d-block mb-3" style="line-height: 15px;">
+            </div>
+            <div class="coblos d-flex mb-3 ms-">
+              <button type="button" value="1" id="coblos2" onclick="coblosAct2()"
+              class="btn btn-primary bg-theme-color py-2 px-3 rounded-3">
+              Coblos <i class="fas fa-edit"></i> </button>
+          </div>
+          </div>
+        </div>
+      </div> <!-- kartu suara 2 end -->
       
     </div>
   </div> <!-- main content END -->
@@ -93,14 +146,39 @@
   <div class="container">
     <div class="row justify-content-center mt-4" style="margin-bottom: 7rem;">
         <div class="col-12 text-center">
-          <form action="#" method="post">
-            <a href="voting-end.html" id="btnMasukanSuara" disabled
+          <!-- <form action="#" method="post"> -->
+            <button 
+            disabled
+            type="button" 
+            data-bs-toggle="modal"
+            id="btnMasukanSuara" 
+            data-bs-target="#exampleModal"
             class="btn btn-pritheme btn-primary rounded-4 fw-semibold text-center py-2 border-0 pb-2" 
-            style="padding-right: 3rem; padding-left: 3rem; margin-top: 5rem;">Masukan suara <i class="fas fa-envelope-open-text fs-3"></i> </a>
-          </form>
+            style="padding-right: 3rem; padding-left: 3rem; margin-top: 5rem;">Masukan suara <i class="fas fa-envelope-open-text fs-3"></i> </button>
+          <!-- </form> -->
         </div>
     </div>
   </div>  <!-- submit btn -->
+
+  <!-- alert yakin -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Anda yakin ?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Pilihan yang Anda buat tidak dapat digugat dan ini bersifat mutlak, Anda tidak bisa memilih ulang atau pun mengubah pilihan Anda di masa depan.
+        </div>
+        <div class="modal-footer border-0">
+          <a href="voting-end.html" type="button" class="btn btn-primary bg-theme-color">Yakin</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Belum yakin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- alert yakin END -->
 
   <!-- footer -->
   <div class="container">
