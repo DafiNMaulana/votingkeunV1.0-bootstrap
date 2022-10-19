@@ -12,6 +12,9 @@
  
      <!-- style -->
      <link rel="stylesheet" href="style/votingkeun.css" />
+
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="../src/fontawesome/css/all.min.css">
 </head>
 <body>
 
@@ -34,12 +37,45 @@
             </div>
 
             <div class="col-12">
-                <a href="bilik-suara-1.html" 
+                <a href="pasangan-calon.html" 
                 class="btn btn-primary rounded-4 bg-theme-color fw-semibold text-center py-2" 
                 style="padding-right: 4rem; padding-left: 4rem; margin-top: 8rem;">Lihat paslon</a>
+
+                <a href="tanggal-pencoblosan.html" 
+                class="btn btn-primary rounded-4 bg-theme-color fw-semibold text-center py-2" 
+                style="padding-right: 2rem; padding-left: 2rem; margin-top: 1rem;">Tanggal pencoblosan</a>
+
+                <button
+                type="button" 
+                data-bs-toggle="modal"
+                id="btnMasukanSuara" 
+                data-bs-target="#modalLogout"
+                type="button" 
+                class="btn text-theme-color rounded-4 bg-secondary-theme fw-semibold text-center py-2 border-0 btn-sectheme" 
+                style="padding-right: 5rem; padding-left: 5rem; margin-top: 1rem;">Keluar <i class="fas fa-sign-out"></i> </button>
             </div>
         </div>
     </div> <!-- Main content END -->
+
+    <!-- alert yakin -->
+    <div class="modal fade" id="modalLogout" tabindex="-1" aria-labelledby="modalLogoutLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalLogoutModalLabel">Yakin mau logout ?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Tindakan ini akan membuat anda keluar dari akun.
+          </div>
+          <div class="modal-footer border-0">
+            <a href="index.html" type="button" class="btn btn-primary bg-theme-color">Yakin</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Belum yakin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- alert yakin END -->
 
     <!-- footer -->
     <div class="container">
@@ -51,6 +87,6 @@
       </div> <!-- footer END -->
      
     
-    
+    <script src="../src/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
